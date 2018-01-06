@@ -16,13 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <h1 class="site-title">Jit-y</h1>
-        <ul class="link-box">
-          <li class="link-box-item"><a class="link" href="https://github.com/jit-y" target="_blank">GITHUB</a></li>
-          <li class="link-box-item"><a class="link" href="https://medium.com/@jit.y.31" target="_blank">MEDIUM</a></li>
-        </ul>
-      </header>
+      {{ partial "header.html" }}
       <main>
         <section class="content">
           <h2 class="heading">About</h2>
@@ -59,9 +53,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
-        © 2017 Yuji Takahashi
-      </footer>
+      {{ partial "footer.html" }}
     </div>
   </body>
 </html>
