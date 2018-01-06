@@ -1,0 +1,179 @@
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  background-size: cover;
+  color: #151515;
+  text-align: left;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 600px;
+  padding: 30px 0 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #151515;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+}
+
+.btn {
+  text-decoration: none;
+  color: #151515;
+  border: 1px solid rgba(169, 169, 169, 0.5);
+  padding: 1px 2px;
+  margin: 0 2px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: #151515;
+  border: 1px solid rgba(169, 169, 169, 0.5);
+  padding: 1px 2px;
+  margin: 0 2px;
+  opacity: 0.9;
+  background-color: #f5f5f5;
+}
+
+.link-box {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  left: -15px;
+  margin: 0px auto;
+  list-style-type: none;
+}
+
+.link-box-item {
+  display: inline-flex;
+  justify-content: left;
+  align-items: left;
+  padding: 5px;
+}
+
+a:visited {
+  color: #151515;
+  text-decoration: none;
+}
+
+.site-title {
+  text-align: left;
+  font-size: 3rem;
+  margin: 20px 30px;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 5px;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  border-bottom: 0.5px solid;
+  padding-top: 5px;
+}
+
+.sub-heading {
+  padding-top: 5px;
+  font-size: 1.8rem;
+  border-bottom: 0.5px solid rgba(169, 169, 169, 0.8);
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list-item {
+  list-style-type: none;
+  padding-left: 0px;
+  letter-spacing: 2px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.content {
+  padding-left: 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.content-wrapper {
+  margin: 20px 0;
+  line-height: 2.5;
+  letter-spacing: 1px;
+}
+
+.footer {
+  width: 600px;
+  padding: 12px 0;
+  padding-left: 30px;
+  font-size: 1.3rem;
+  text-align: right;
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .site-title-sub::before, .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .header {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+  .footer {
+    width: 100%;
+    padding-right: 15px;
+  }
+  .container {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .content-wrapper {
+    display: block;
+    position: relative;
+  }
+  .content-text {
+    line-height: 1.8;
+  }
+}

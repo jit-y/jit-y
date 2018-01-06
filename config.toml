@@ -1,0 +1,6 @@
+baseURL = "https://jit-y.me/"
+languageCode = "ja"
+title = "jit-y"
+
+[permalinks]
+posts = "archives/:title"
