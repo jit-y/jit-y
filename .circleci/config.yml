@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Deploy to S3 and delete cloudfront cache
           command: |
-            aws s3 sync --exact-timestamps public/ s3://jit-y/ --delete
+            aws s3 sync --acl public-read --exact-timestamps public/ s3://jit-y/ --delete
             aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
 
 workflows:
