@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Deploy to S3
           command: |
-            aws s3 sync --exact-timestamps public/ s3://jit-y.net/ --delete
+            aws s3 sync --exact-timestamps public/ s3://jit-y/ --delete
 
 workflows:
   version: 2
