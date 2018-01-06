@@ -12,6 +12,7 @@ jobs:
             apk update
             apk add --no-cache git=2.13.5-r0 py-pip=9.0.1-r1
             pip install awscli==1.11.120
+            aws configure set preview.cloudfront true
       - run:
           name: Install hugo
           command: go get -v github.com/gohugoio/hugo
@@ -19,9 +20,10 @@ jobs:
           name: Build hugo
           command: hugo
       - run:
-          name: Deploy to S3
+          name: Deploy to S3 and delete cloudfront cache
           command: |
             aws s3 sync --exact-timestamps public/ s3://jit-y/ --delete
+            aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
 
 workflows:
   version: 2
