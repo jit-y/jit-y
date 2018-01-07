@@ -5,8 +5,9 @@ draft: false
 tags: ["ruby"]
 ---
 
-Hash.newを利用している
 [airake/airbrake-ruby](https://github.com/airbrake/airbrake-ruby)を参考に
+
+Hash.newを利用している。
 
 ```ruby
 class NullPlugin

@@ -65,6 +65,10 @@ body {
   padding: 5px;
 }
 
+.link-box-item > a:hover {
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
 a:visited {
   color: #151515;
   text-decoration: none;
@@ -74,6 +78,14 @@ a:visited {
   text-align: left;
   font-size: 3rem;
   margin: 20px 30px;
+}
+
+.site-title > a {
+  text-decoration: none;
+}
+
+.site-title > a:hover {
+  border-bottom: solid rgba(169, 169, 169, 0.5);
 }
 
 .site-description {
@@ -112,6 +124,10 @@ a:visited {
   list-style-type: none;
   padding-left: 0px;
   letter-spacing: 2px;
+}
+
+.list-item > a:hover {
+  background-color: rgba(169, 169, 169, 0.5);
 }
 
 .bold {
