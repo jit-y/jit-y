@@ -1,4 +1,4 @@
-baseURL = "https://jit-y.net/"
+baseURL = "https://www.jit-y.net/"
 languageCode = "ja"
 title = "jit-y"
 pygmentsCodefences = true
@@ -6,4 +6,4 @@ pygmentsStyle = "trac"
 pygmentsOptions = "nobackground=true"
 
 [permalinks]
-archives = "/archives/:title"
+archives = "/archives/:filename"
