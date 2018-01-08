@@ -1,3 +1,5 @@
+/* Base */
+
 html {
   font-size: 62.5%;
 }
@@ -15,9 +17,9 @@ body {
   font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-.container {
-  width: 600px;
-  margin: 0 auto;
+pre {
+  padding: 10px 15px;
+  background-color: #f8f8f8 !important;
 }
 
 .header {
@@ -25,6 +27,84 @@ body {
   padding: 30px 0 0;
 }
 
+.footer {
+  width: 600px;
+  padding: 12px 0;
+  padding-left: 30px;
+  font-size: 1.3rem;
+  text-align: right;
+  margin: 30px 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.site-title {
+  text-align: left;
+  font-size: 3rem;
+  margin: 20px 30px;
+}
+
+.site-title > a {
+  text-decoration: none;
+  color: #151515;
+}
+
+.site-title > a:hover {
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+
+/* Content Base */
+.content {
+  margin-top: 20px;
+  padding-left: 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.content-wrapper {
+  line-height: 2.5;
+  letter-spacing: 1px;
+}
+
+/* Link Box */
+.link-box {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  padding: 0;
+  margin: 0px auto;
+  list-style-type: none;
+}
+
+.link-box-item {
+  display: inline-flex;
+  justify-content: left;
+  align-items: left;
+  padding: 5px 5px 0 5px;
+}
+
+/* List */
+.list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list-item {
+  list-style-type: none;
+  padding-left: 0px;
+  letter-spacing: 2px;
+}
+
+/* Link */
 .link {
   text-decoration: none;
   color: #151515;
@@ -35,6 +115,12 @@ body {
   background-color: #f5f5f5;
 }
 
+a:visited {
+  color: #151515;
+  text-decoration: none;
+}
+
+/* Button */
 .btn {
   text-decoration: none;
   color: #151515;
@@ -53,47 +139,7 @@ body {
   background-color: #f5f5f5;
 }
 
-.link-box {
-  display: flex;
-  flex-flow: row;
-  position: relative;
-  padding: 0;
-  margin: 0px auto;
-  list-style-type: none;
-}
-
-.link-box-item {
-  display: inline-flex;
-  justify-content: left;
-  align-items: left;
-  padding: 5px 5px 0 5px;
-}
-
-a:visited {
-  color: #151515;
-  text-decoration: none;
-}
-
-.site-title {
-  text-align: left;
-  font-size: 3rem;
-  margin: 20px 30px;
-}
-
-.site-title > a {
-  text-decoration: none;
-}
-
-.site-title > a:hover {
-  border-bottom: solid rgba(169, 169, 169, 0.5);
-}
-
-.site-description {
-  margin-bottom: 50px;
-  color: #888;
-  font-size: 1.6rem;
-}
-
+/* Headings */
 .heading {
   position: relative;
   display: inline-block;
@@ -115,45 +161,9 @@ a:visited {
   border-bottom: 0.5px solid rgba(169, 169, 169, 0.8);
 }
 
-.list {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-.list-item {
-  list-style-type: none;
-  padding-left: 0px;
-  letter-spacing: 2px;
-}
-
+/* Util */
 .bold {
   font-weight: 700;
-}
-
-.content {
-  margin-top: 20px;
-  padding-left: 30px;
-  background-color: #fff;
-  color: #333;
-}
-
-.content-wrapper {
-  line-height: 2.5;
-  letter-spacing: 1px;
-}
-
-.footer {
-  width: 600px;
-  padding: 12px 0;
-  padding-left: 30px;
-  font-size: 1.3rem;
-  text-align: right;
-  margin: 30px 0;
-}
-
-pre {
-  padding: 10px 15px;
-  background-color: #f8f8f8 !important;
 }
 
 @media (max-width: 768px) {
