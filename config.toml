@@ -2,7 +2,7 @@ baseURL = "https://www.jit-y.net/"
 languageCode = "ja"
 title = "jit-y"
 pygmentsCodefences = true
-pygmentsStyle = "trac"
+pygmentsStyle = "native"
 pygmentsOptions = "nobackground=true"
 
 [permalinks]

@@ -13,31 +13,32 @@ body {
   background-size: cover;
   color: #151515;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+
 pre {
   padding: 10px 15px;
-  background-color: #f8f8f8 !important;
+  background-color: #292626 !important;
+  overflow-y: scroll;
 }
 
 .header {
-  width: 600px;
+  width: 720px;
   padding: 30px 0 0;
 }
 
 .footer {
-  width: 600px;
+  width: 720px;
   padding: 12px 0;
   padding-left: 30px;
   font-size: 1.3rem;
-  text-align: right;
-  margin: 30px 0;
+  text-align: left;
 }
 
 .container {
-  width: 600px;
+  width: 720px;
   margin: 0 auto;
 }
 
@@ -56,12 +57,6 @@ pre {
   background-color: rgba(169, 169, 169, 0.5);
 }
 
-.site-description {
-  margin-bottom: 50px;
-  color: #888;
-  font-size: 1.6rem;
-}
-
 /* Content Base */
 .content {
   margin-top: 20px;
@@ -70,13 +65,22 @@ pre {
   color: #333;
 }
 
+.content a {
+  text-decoration: none;
+  color: #151515;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+}
+
+.content a:hover {
+  background-color: #f5f5f5;
+}
+
 .content-wrapper {
   line-height: 2.5;
   letter-spacing: 1px;
 }
 
 .content-box {
-  padding-left: 5px;
   margin-top: 5px;
 }
 
@@ -84,11 +88,11 @@ pre {
   display: inline-block;
   position: relative;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .content-box-description {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0;
   word-wrap: break-word;
 }
@@ -162,21 +166,14 @@ a:visited {
 .heading {
   position: relative;
   display: inline-block;
-  margin: 0 0;
+  margin: 0 0 5px;
   letter-spacing: 2px;
   font-size: 2.5rem;
 }
 
-.heading::after {
-  content: '';
-  display: block;
-  border-bottom: 0.5px solid;
-  padding-top: 5px;
-}
-
 .sub-heading {
   margin: 5px 0 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   border-bottom: 0.5px solid rgba(169, 169, 169, 0.8);
 }
 

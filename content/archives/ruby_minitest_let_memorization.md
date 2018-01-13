@@ -1,5 +1,5 @@
 ---
-title: "[minitest] itのメモ化"
+title: "[minitest] letのメモ化"
 date: 2018-01-07T15:49:39+09:00
 draft: false
 tags: ["ruby"]
