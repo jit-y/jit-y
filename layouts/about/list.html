@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  {{ partial "head.html" (dict "context" . "Title" .Page.Title) }}
+  <body>
+    <div class="container">
+      {{ partial "header.html" }}
+      <main>
+        <section class="content">
+          <h1 class="heading">About me</h1>
+          <div class="content-wrapper">
+            <section>
+              <h2 class="sub-heading">Job</h2>
+              <div class="content-box">
+                <p class="content-box-description">
+                  Server Side Engineer
+                </p>
+              </div>
+            </section>
+            <section>
+              <h2 class="sub-heading">Programming Language</h2>
+              <div class="content-box">
+                <p class="content-box-description">
+                  <span class="bold">Work:</span> Ruby, Javascript <br>
+                  <span class="bold">Private:</span> Elixir, Erlang, Rust
+                </p>
+              </div>
+            </section>
+            <section>
+              <h2 class="sub-heading">Libraries</h2>
+              <div class="content-box">
+                <div class="content-box-heading">Bun2</div>
+                <p class="content-box-description">A Bot framework written in Elixir.</p>
+                <a class="btn" href="https://github.com/jit-y/bun2" target="_blank">GITHUB</a>
+                <a class="btn" href="https://hex.pm/packages/bun2" target="_blank">HEX</a>
+              </div>
+              <div class="content-box">
+                <div class="content-box-heading">spreadsheet_textconv</div>
+                <p class="content-box-description">Command tool for converting spreadsheet file (e.g.: .xlsx, .xls) to text.</p>
+                <a class="btn" href="https://github.com/jit-y/spreadsheet_textconv" target="_blank">GITHUB</a>
+                <a class="btn" href="https://crates.io/crates/spreadsheet_textconv" target="_blank">CRATES</a>
+              </div>
+            </section>
+            <section>
+              <h2 class="sub-heading">Writings</h2>
+              <div class="content-box">
+                <div class="content-box-heading">Medium</div>
+                <p class="content-box-description">Writings about my works.</p>
+                <a class="btn" href="https://medium.com/@jit.y.31" target="_blank">LINK</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+      {{ partial "footer.html" }}
+    </div>
+  </body>
+</html>
+
