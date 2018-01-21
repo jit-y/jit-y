@@ -1,3 +1,3 @@
 # jit-y.net
 
-https://jit-y.net
+https://www.jit-y.net
